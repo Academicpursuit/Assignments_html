@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doc Appointment</title>
+  <style>
+    h1{
+      text-align: center;
+    }
+    .table1{
+      width: 100%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      padding: 20px;
+    }
+    .table2 td:second-child(1){
+      width: 30%;
+    }
+    td{
+      padding: 10px;
+      vertical-align: top;
+    }
+    input[type="text"],
+    input[type="date"],
+    textarea,
+    input[type="time"] {
+      width: 95%;
+      padding: 5px;
+      border: 1px solid #02b3ff;
+      border-radius: 3px;
+    }
+    input[type="submit"] {
+      background-color: #2a7ae2;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #e3f400;
+    }
+  </style>
+</head>
+
+<!--Code written by Aaron-->
+
+<body>
+
+<table class="table1">
+    <tr>
+    <td>
+        <img src="../images/doc_3.png">
+    </td>
+    <td>
+  <form action="*" method="get">
+    <table class="table2">
+      <colgroup>
+        <col>
+        <col style="width: 40%;">
+        <col>
+      </colgroup>
+        <tr>
+            <td colspan="3"><h1>Doctor Appointment Form</h1></td>
+        </tr>
+        <tr>
+            <td colspan="3"><hr style="height: 3px; background-color: #02b3ff;"></td>
+        </tr>
+      <tr>
+        <td><label for="date">Appointment Date</label></td>
+        <td><input type="date" id="date" name="date"></td>
+      </tr>
+      <tr>
+        <td><label for="time">Appointment Time</label></td>
+        <td><input type="time" id="time" name="time"></td>
+      </tr>
+      <tr>
+        <td><label for="name">Name</label></td>
+        <td><input type="text" id="name" name="name" placeholder="First"></td>
+        <td><input type="text" id="name" name="name2" placeholder="Last"></td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="phone">Phone</label></td>
+        <td><input type="number" id="phone" name="phone" placeholder="####"></td>
+      </tr>
+      <tr>
+        <td><label for="address">Address</label></td>
+        <td><input type="text" id="address" name="address" placeholder="City"></td>
+        <td><input type="text" id="state" name="state" placeholder="State"></td>
+      </tr>
+      <tr>
+        <td><label for="query">Your Query</label></td>
+        <td colspan="2"><textarea id="query" name="query" rows="4" cols="40"></textarea></td>
+      </tr>
+      <tr> 
+        <td rowspan="2">Appointment Type</td>
+        <td>Select which appointment type(s) you require</td>
+      </tr>
+      <tr>
+        <td>
+          <label><input type="checkbox" name="appttype" value="cervix"> Cervix checkup</label><br>
+          <label><input type="checkbox" name="appttype" value="heart"> Heart checkup</label><br>
+          <label><input type="checkbox" name="appttype" value="eye"> Eye check-up</label><br>
+          <label><input type="checkbox" name="appttype" value="hearing"> Hearing Test</label>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="Send"></td>
+      </tr>
+      <tr>
+          <td style="text-align: right; color: gray; font-weight: lighter;" colspan="3">
+              <cite>Written by Aaron(Batch-2025)</cite>
+          </td>    
+        </tr>
+    </table>
+  </form>
+    </td>
+    </tr>
+</table>
+</body>
+
+<!--Code written by Aaron-->
+
+</html>
